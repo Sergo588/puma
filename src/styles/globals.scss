@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.cdnfonts.com/css/good-timing');
+@import url('https://fonts.cdnfonts.com/css/Poppins');
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-good-timing {
+  letter-spacing: 0.25px;
+  font-family: 'Good Timing', sans-serif;
+}
+
+.title-gradient {
+  max-width: max-content;
+  background: linear-gradient(90deg, #E644F8 -7.26%, #9FA3FF 48.01%, #82D2FF 107.03%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.title-countdown-gradient {
+  background: linear-gradient(90deg, #E644F8 0.15%, #9FA3FF 48.44%, #82D2FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.Toastify__toast-icon {
+  margin-right: 12px !important;
+}
+
+
+// nft-wrapper 
+
+.nftCard__power-wrapper {
+  background: linear-gradient(138.11deg, rgba(255, 255, 255, 0.1) -161.7%, rgba(255, 255, 255, 0) 111.81%);
+}
+
+.nftCard-wrapper {
+  background: linear-gradient(156.8deg, #2D273F -17.88%, #120B26 107.59%);
+  box-shadow: -16.1698px -22.6378px 97.019px -48.5095px rgba(70, 46, 140, 0.86), 16.9783px 34.7651px 80.8491px 16.1698px rgba(0, 0, 0, 0.25);
+}
+
+.nftCard-lineGradient {
+  box-shadow: -16.1698px -22.6378px 97.019px -48.5095px rgba(70, 46, 140, 0.86), 16.9783px 34.7651px 80.8491px 16.1698px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(156.8deg, #E644F8 0.15%, #9FA3FF 48.44%, #82D2FF 100%);
+}
+
+.border-gradient {
+  background: linear-gradient(156.8deg, #E644F8 0.15%, #9FA3FF 48.44%, #82D2FF 100%);
+  
+}
+
+@media (max-width: 767px) {
+  .border-gradient {
+    background: none;
+  }
+}
+
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+ 
+.hide-scroll {
+  -ms-overflow-style: none;  /* IE и Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.slide {
+  opacity: 0;
+  transition: opacity 1s !important;
+}
+.slide.selected {
+  opacity:1;
+  transition: opacity 3s !important;
+}
